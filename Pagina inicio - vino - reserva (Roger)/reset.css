@@ -1,0 +1,31 @@
+/* reset.css */
+
+/* Box-sizing reset */
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  /* Remove list styles (bullet points, numbering) */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove default styles for links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Set default font family and size */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Optionally, you can add more resets based on your specific needs */
+  

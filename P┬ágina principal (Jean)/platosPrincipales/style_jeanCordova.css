@@ -1,0 +1,177 @@
+body {
+    /* background-image: radial-gradient(ellipse, #F2B705 0%, #F29F05 100%); */
+    background-image: url(fondoWeb.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+    /* min-height: 100vh; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    background-color: rgb(247, 168, 0);
+    border: 1px solid rgb(0,0,0);
+}
+
+.language img {
+    height: 50px;
+}
+
+.language img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 8px rgba(212, 189, 17, 0.9);
+}
+
+.box {
+    font-weight: bold;
+    font-size: 3rem;
+    height: 100px;
+    width:100%;
+    text-align: center;
+    align-self: center;
+    justify-content: center; 
+}
+
+.menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu a:hover {
+    background-color: #ddd;
+}
+  
+.Logo {
+    width: 100px; /* Establece el ancho de la imagen */
+    height: 100px; /* Establece la altura de la imagen */
+    margin: auto; /* Centra horitzontalment el marge de la foto */
+    display: block; /* Elimina el espacio adicional de la parte inferior de la imagen */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    overflow: hidden; /* Asegura que la imagen se recorte correctamente */
+    padding: 50px;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+}
+
+.grid-container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr; /*indicamos que quiero que cada columna sea una fraccion del container*/
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+}
+   
+.item {
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    display: grid;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.90); /*indicamos el ancho de la sombra y su transparencia*/
+    cursor: pointer; /*para que el cursor cambie a una mano para elegir*/
+    overflow: hidden; /*indicamos que al expandirse la imagen, no se salga del div*/
+}
+
+.img img{
+    height: 100%;
+    width: 100%;
+    transition: all 900ms ease-out;   
+}
+
+.img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 8px rgba(212, 189, 17, 0.9);
+}
+
+.descripcion {
+    background-color: beige;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.50);
+}
+
+.upButton {
+    position: absolute;/* si hya prblemas con la altura de los grids del main, comentarlo y probar*/
+    right: 10px;
+    top: 229vh;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(247, 168, 0); /* Color de fondo del pie de página */
+    color: rgb(0,0,0); /* Color del texto del pie de página */
+    padding: 20px; /* Espaciado interno del pie de página */
+    bottom: 0;
+    width: 100%;
+    border: 1px solid rgb(0,0,0);
+}
+    
+.containerFooter {
+    background-color: rgb(247, 168, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boxFooterA {
+    text-align: left; 
+    margin-left: 500 px;
+    padding: 2 em;
+}
+  
+.boxFooterB {
+    padding: 2 em;
+    align-self: center;
+}
+
+.boxFooterC {
+    text-align: center;
+    margin-right: 100 px;
+    padding: 2 em;
+}
+
+.xarxa {
+    width: 15px; /* Establece el ancho de la imagen */
+    height: 15px; /* Establece la altura de la imagen */ 
+}
+
+@media (max-width: 400px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 8fr;
+        margin: auto;
+        padding: 50px;
+    }
+}

@@ -1,0 +1,212 @@
+body {
+background-image: url('fondoWeb.jpg'); /* La imagen que cubre la pagina */
+background-repeat: no-repeat; 
+background-size: cover; 
+justify-content: center; 
+background-position: center;
+font-family: Arial, sans-serif;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* Media query para pantallas mas pequñas de 480px */
+@media (max-width: 479px) {
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
+
+.box { /* Aquí se explica lo que va a tener el header */
+display: flex;
+height: 100px;
+background-color: rgb(163, 128, 83);
+text-align: center; /* Alinea el texto */
+align-self: center; /* Centra verticalmente el box en su contenedor */
+justify-content: center; /*  */
+border: 1px solid rgb(0,0,0); /* Delimita el color y el grosor del borda que tiene el contenedor*/
+width: 100%;
+margin: 0 auto;
+}
+
+#Logo {
+width: 100px; 
+height: 100px; 
+margin: auto; /* Centra horitzontalment el marge de la foto */
+display: block; /* Elimina el espai adicional de abaix de la foto */
+border-radius: 50%; /* Hace que la imagen sea redonda */
+overflow: hidden; /* Asegura que la imagen se recorte correctamente */
+margin-bottom: 50px; 
+border: 4px solid rgb(0,0,0);
+}
+
+.wrap {
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: url(menu.jpg);
+background-size: cover;
+background-position: center;
+}
+
+.wrap2 {
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: url(primer.jpg);
+background-size: cover;
+background-position: center;
+}
+
+.wrap3 {
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: url(segon.jpg);
+background-size: cover;
+background-position: center;
+}
+
+.wrap4 {
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: url(vipostre.jpg);
+background-size: cover;
+background-position: center;
+}
+
+.wraptexto {
+text-align: center;
+width: 50%;
+backdrop-filter: blur(10px); 
+color: rgb(180, 218, 12);   
+}
+
+button{ /* Esta es la configuración que tiene el contenedor y el texto del boton */
+background: rgb(209, 148, 67);
+cursor:pointer;
+border: none;
+padding: 16px 32px;
+color: aliceblue;  
+font-size: 24px;
+font-weight: bold;
+position: relative;
+border-radius: 12px;
+width: 30%;
+}
+
+button::before{ /* Este es el css del boton */
+content: "";  
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+background: linear-gradient( 45deg, red, blue, deeppink, blue,red, blue, deeppink, blue);
+background-size: 800%;
+border-radius: 10px;
+filter: blur(8px);
+animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing{ /* Esta es la animación del boton de contactar y hacer una reserva */
+0% {
+background-position: 0 0; 
+}
+50%{
+background-position: 400% 0;  
+}
+100%{
+background-position: 0 0;   
+}
+}
+
+.navbar { /* Este es la viñeta que esta abajo del título que nos lleva las diversas paginas de la web */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(235, 174, 94);
+    border: 1px solid rgb(0,0,0);
+  }
+  
+  .nav-link {
+    color: #000000;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+
+footer { /* Este es el container principal del fotter*/
+background-color: rgb(235, 174, 94); 
+color: rgb(0,0,0); 
+padding: 20px; /* Espaciado interno del pie de página */
+text-align: center; 
+position: static;
+bottom: 0;
+width: 100%;
+border: 1px solid rgb(0,0,0);
+}
+
+.containerfotter { 
+background-color: rgb(235, 174, 94);
+display: flex;
+flex-direction: row;
+}
+
+.boxfottera { /* Este es el primer subloque del fotter, aquí esta la ubicación y las redes sociales del restaurante */
+height: 170px;
+width: 65%;
+text-align: left; 
+margin-left: 500 px;
+padding: 2 em;
+float: left;
+}
+
+.boxfotterb { /* Este es el segundo subloque del fotter, aquí esta el horario y el telefono de contacto del restaurante */
+height: 170px;
+width: 30%;
+text-align: center;
+margin-right: 100 px;
+padding: 2 em;
+float: right;
+}
+
+#Xarxes1{ /* Logo Instagram */
+width: 20px; 
+height: 20px; 
+}
+
+#Xarxes2{ /* Logo Facebook */
+width: 20px; 
+height: 20px;  
+}
+
+#Xarxes3{ /* Logo Twitter */
+width: 20px;
+height: 20px; 
+} 

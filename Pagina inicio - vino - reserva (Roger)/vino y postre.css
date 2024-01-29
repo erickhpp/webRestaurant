@@ -1,0 +1,119 @@
+body {
+  background-image: url('fondoWeb.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+}
+  
+  .box {
+  display: flex;
+  height: 100px;
+  background-color: rgb(235, 174, 94);
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  border: 1px solid rgb(0,0,0);
+  width: 100%;
+  margin: 0 auto;
+}
+  
+  #Logo {
+  width: 100px; /* Establece el ancho de la imagen */
+  height: 100px; /* Establece la altura de la imagen */
+  margin: auto; /* Centra horitzontalment el marge de la foto */
+  display: block; /* Elimina el espai adicional de abaix de la foto */
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  overflow: hidden; /* Asegura que la imagen se recorte correctamente */
+}
+  
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-text {
+  text-align: center;
+  flex: 1;
+  border: 1px solid rgb(0,0,0);
+  background-color: rgb(235, 174, 94);
+}
+
+#Vinotinto {
+  max-width: 100%;
+  height: auto;
+}
+
+#Vinoblanco {
+  max-width: 100%;
+  height: auto;
+}
+
+#cheesecake {
+  max-width: 100%;
+  height: auto;
+}
+
+#helados {
+  max-width: 100%;
+  height: auto;
+}
+
+#sangria {
+  max-width: 100%;
+  height: auto;
+}
+
+#brownie {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+    background-color: rgb(235, 174, 94); /* Color de fondo del pie de página */
+    color: rgb(0,0,0); /* Color del texto del pie de página */
+    padding: 20px; /* Espaciado interno del pie de página */
+    text-align: center; /* Alineación del texto al centro */
+    position: static;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid rgb(0,0,0);
+  }
+  
+  .containerfotter {
+      background-color: rgb(235, 174, 94);
+      display: flex;
+      flex-direction: row;
+  }
+  .boxfottera {
+    height: 100px;
+    width: 650px;
+    text-align: left; 
+    margin-left: 500 px;
+    padding: 2 em;
+    float: left;
+  }
+
+  .boxfotterb {
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    margin-right: 100 px;
+    padding: 2 em;
+    float: right;
+  }
+
+  #Xarxes1{
+    width: 20px; /* Establece el ancho de la imagen */
+    height: 20px; /* Establece la altura de la imagen */ 
+   }
+   #Xarxes2{
+    width: 20px; /* Establece el ancho de la imagen */
+    height: 20px; /* Establece la altura de la imagen */ 
+   }
+   #Xarxes3{
+    width: 20px; /* Establece el ancho de la imagen */
+    height: 20px; /* Establece la altura de la imagen */ 
+   }  
+    
